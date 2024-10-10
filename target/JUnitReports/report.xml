@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Cucumber" time="77.599" tests="8" skipped="0" failures="0" errors="0">
+<testcase classname="feature to test login functionality to Swag Labs" name="Verify login page" time="13.909">
+<system-out><![CDATA[
+Given User has opened swag labs browser.....................................passed
+Then There are fields for inputting username and password that have not been filled in.passed
+And There is a Swag Labs logo name..........................................passed
+]]></system-out>
+</testcase>
+<testcase classname="feature to test login functionality to Swag Labs" name="Verify if login is successful with valid credentials" time="10.684">
+<system-out><![CDATA[
+Given User has opened swag labs browser.....................................passed
+When User enter username as "standard_user" and password as "secret_sauce"..passed
+And User click login button.................................................passed
+Then User should be able to see Dashboard Page..............................passed
+]]></system-out>
+</testcase>
+<testcase classname="feature to test login functionality to Swag Labs" name="Verify if login is unsuccessful with invalid credentials - Example #1.1" time="8.846">
+<system-out><![CDATA[
+Given User has opened swag labs browser.....................................passed
+When User enter username as "standard_user" and password as ""..............passed
+And User click login button.................................................passed
+Then Showing symbol red x in the "password".................................passed
+And Showing Error message "Epic sadface: Password is required"..............passed
+And Stay on the login page..................................................passed
+And The label and border in the "password" field are red....................passed
+]]></system-out>
+</testcase>
+<testcase classname="feature to test login functionality to Swag Labs" name="Verify if login is unsuccessful with invalid credentials - Example #1.2" time="9.474">
+<system-out><![CDATA[
+Given User has opened swag labs browser.....................................passed
+When User enter username as "" and password as "secret_sauce"...............passed
+And User click login button.................................................passed
+Then Showing symbol red x in the "username".................................passed
+And Showing Error message "Epic sadface: Username is required"..............passed
+And Stay on the login page..................................................passed
+And The label and border in the "username" field are red....................passed
+]]></system-out>
+</testcase>
+<testcase classname="feature to test login functionality to Swag Labs" name="Verify if login is unsuccessful with invalid credentials - Example #1.3" time="8.507">
+<system-out><![CDATA[
+Given User has opened swag labs browser.....................................passed
+When User enter username as "" and password as ""...........................passed
+And User click login button.................................................passed
+Then Showing symbol red x in the "both".....................................passed
+And Showing Error message "Epic sadface: Username is required"..............passed
+And Stay on the login page..................................................passed
+And The label and border in the "both" field are red........................passed
+]]></system-out>
+</testcase>
+<testcase classname="feature to test login functionality to Swag Labs" name="Verify if login is unsuccessful with invalid credentials - Example #1.4" time="8.984">
+<system-out><![CDATA[
+Given User has opened swag labs browser.....................................passed
+When User enter username as "standard_user" and password as "secret"........passed
+And User click login button.................................................passed
+Then Showing symbol red x in the "both".....................................passed
+And Showing Error message "Epic sadface: Username and password do not match any user in this service".passed
+And Stay on the login page..................................................passed
+And The label and border in the "both" field are red........................passed
+]]></system-out>
+</testcase>
+<testcase classname="feature to test login functionality to Swag Labs" name="Verify if login is unsuccessful with invalid credentials - Example #1.5" time="8.508">
+<system-out><![CDATA[
+Given User has opened swag labs browser.....................................passed
+When User enter username as "standarda" and password as "secret_user".......passed
+And User click login button.................................................passed
+Then Showing symbol red x in the "both".....................................passed
+And Showing Error message "Epic sadface: Username and password do not match any user in this service".passed
+And Stay on the login page..................................................passed
+And The label and border in the "both" field are red........................passed
+]]></system-out>
+</testcase>
+<testcase classname="feature to test login functionality to Swag Labs" name="Verify if login is unsuccessful with invalid credentials - Example #1.6" time="8.482">
+<system-out><![CDATA[
+Given User has opened swag labs browser.....................................passed
+When User enter username as "standard" and password as "secret".............passed
+And User click login button.................................................passed
+Then Showing symbol red x in the "both".....................................passed
+And Showing Error message "Epic sadface: Username and password do not match any user in this service".passed
+And Stay on the login page..................................................passed
+And The label and border in the "both" field are red........................passed
+]]></system-out>
+</testcase>
+</testsuite>
